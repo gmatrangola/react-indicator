@@ -6,4 +6,5 @@ import reactor.core.publisher.Flux;
 
 public interface IndicatorRepository extends ReactiveCassandraRepository<Indicator, String> {
     Flux<Indicator> findAllByCountryCode(String countryCode);
+    Flux<Indicator> findAllByIndicatorCode(String indicatorCode);
 }
